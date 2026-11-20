@@ -1,0 +1,36 @@
+cat > .gitignore <<'EOF'
+# Virtual environments
+venv/
+.venv/
+env/
+
+# IDE files
+.idea/
+.vscode/
+
+# Python caches and checkpoints
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# Build output
+hadoop/target/
+
+# Logs and secrets
+*.log
+.env
+
+# Data: keep the download script, not the dataset
+data/raw/*.zip
+data/raw/ml-latest-small/
+data/processed/
+
+# Trained models
+*.pkl
+*.joblib
+models/
+
+# OS files
+.DS_Store
+Thumbs.db
+EOF
